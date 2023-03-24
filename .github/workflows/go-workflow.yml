@@ -18,7 +18,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
     - name: Build the Docker image
-      run: docker build --file ./go/v1.19/Dockerfile.golang --platform linux/arm64 --tag gagankshetty/devcontainer:golang1.19 .
+      run: docker buildx build --file ./go/v1.19/Dockerfile.golang --platform=linux/arm64,linux/amd64 --tag gagankshetty/devcontainer:golang1.19 .
       
     - name: Docker Push
       run: docker push gagankshetty/devcontainer:golang1.19
