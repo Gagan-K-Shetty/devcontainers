@@ -3,7 +3,7 @@
 {
 	"name": "Go",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "gagankshetty/devcontainer:golang",
+	"image": "gagankshetty/devcontainer:golang1.19",
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [8080],
