@@ -9,7 +9,7 @@
 	"forwardPorts": [8080],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "",
+	"postCreateCommand": "go mod download",
 
 	// Configure tool-specific properties.
 	"customizations": {
